@@ -19,8 +19,16 @@ type Table = {
 };
 
 function setTheTable(): Table {
-	// 👉 FIXME ❌
-	return { seats: [] };
+
+	return { seats: [
+		{
+			drink: {
+				type: 'Lemonade',
+				poured: false,
+			},
+		},
+	],
+ };
 }
 
 export function attendATeaParty() {
