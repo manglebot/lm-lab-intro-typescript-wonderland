@@ -25,22 +25,13 @@ function setTheTable(): Table {
 	for (let i = 0; i < 4; i++) {
 		table.seats.push({
 			drink: {
-				type: 'Lemonade',
-				poured: false,
+				type: 'Tea',
+				poured: true,
 			},
 		});
 	}
 	return table;
 
-// 	return { seats: [
-// 		{
-// 			drink: {
-// 				type: 'Lemonade',
-// 				poured: false,
-// 			},
-// 		},
-// 	],
-//  };
 }
 
 export function attendATeaParty() {
