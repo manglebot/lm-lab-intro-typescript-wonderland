@@ -20,12 +20,16 @@ type Table = {
 
 function setTheTable(): Table {
 
-	const table: Table = { seats: Array(4).fill({ drink: { type: 'Tea', poured: true }})};
+	const table: Table = { 
+		seats: Array(4).fill({ 
+			drink: { 
+				type: 'Tea', 
+				poured: true 
+			}
+		})
+	};
 
 	return table;
-
-
-
 }
 
 export function attendATeaParty() {
