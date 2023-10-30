@@ -20,17 +20,11 @@ type Table = {
 
 function setTheTable(): Table {
 
-	const table: Table = { seats: [] };
+	const table: Table = { seats: Array(4).fill({ drink: { type: 'Tea', poured: true }})};
 
-	for (let i = 0; i < 4; i++) {
-		table.seats.push({
-			drink: {
-				type: 'Tea',
-				poured: true,
-			},
-		});
-	}
 	return table;
+
+
 
 }
 
