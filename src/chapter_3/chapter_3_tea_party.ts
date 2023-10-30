@@ -20,15 +20,27 @@ type Table = {
 
 function setTheTable(): Table {
 
-	return { seats: [
-		{
+	const table: Table = { seats: [] };
+
+	for (let i = 0; i < 4; i++) {
+		table.seats.push({
 			drink: {
 				type: 'Lemonade',
 				poured: false,
 			},
-		},
-	],
- };
+		});
+	}
+	return table;
+
+// 	return { seats: [
+// 		{
+// 			drink: {
+// 				type: 'Lemonade',
+// 				poured: false,
+// 			},
+// 		},
+// 	],
+//  };
 }
 
 export function attendATeaParty() {
