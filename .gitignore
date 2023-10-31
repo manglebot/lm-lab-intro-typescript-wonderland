@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Pesky apple stuff
+.DS_Store
